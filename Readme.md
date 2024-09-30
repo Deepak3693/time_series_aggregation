@@ -10,7 +10,7 @@ This project implements a batch job that aggregates time series data based on me
 time_series_aggregation/
 │
 ├── data/
-|   ├── input/
+│   ├── input/
 │       ├── input.csv       # Example input CSV file containing metrics, values, and timestamps
 │   ├── output/             # output folder to save the results
 │
@@ -59,9 +59,12 @@ time_series_aggregation/
     precipitation,0.5,2022-06-04T14:23:32.000Z
     ```
 3. **Arguments of glue job:**
+
+    ```bash
     --input_path : Path to input CSV file
     --output_path : Directory to save the output CSV
     --bucket_duration : Duration for the time buckets (default: "24 hours")
+    ```bash
 
 4. **Run the PySpark Job:** Use the ```spark-submit command``` to run the aggregation job. Specify the input and output file paths:
 
