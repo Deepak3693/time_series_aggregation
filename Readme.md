@@ -41,6 +41,7 @@ time_series_aggregation/
    ```bash
    pip install -r requirements.txt
    ```
+3. **Java:** Ensure you have Java (JDK) installed, as Spark runs on the Java Virtual Machine. Check the Spark documentation for the required Java version.
 
 ## Running the job
 
